@@ -101,4 +101,4 @@ La representación de cada número está sujeta al esquema de conexión realizad
 
 
 Y esto es todo, espero que os pueda ser útil. Podéis encontrar todo el código comentado al detalle aquí:
-[Código Arduino (.ino)](https://github.com/ankgiel/dado_electronico_v3.ino)
+[Código Arduino (.ino)](dado_electronico_v3.ino)
