@@ -24,6 +24,7 @@ Consta de los siguientes componentes:
 
 
 ![Ensamblaje del circuito](circuito_dado.png)
+![Esquemático del circuito](dado_schematic.png)
 
 
 ## Especificaciones del funcionamiento
