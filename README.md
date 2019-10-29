@@ -4,24 +4,26 @@
 
 Este pequeño proyecto consiste en un dado electrónico en el que los números aparecen en el display de forma sucesiva mientras el jugador mantiene dos botones pulsados. Al soltar estos botones el último número que se mostró en el dado es el seleccionado y se muestra de forma parpadeante. La velocidad de aparición de los números es variable y por tanto es posible dificultar hacer trampas para soltar los botones en el número que se desee. Además, por si el usuario no recuerda el número que le salió en el dado, pulsando únicamente uno de los dos botones es posible mostrar el dígito las veces necesarias pero sin parpadear para indicar que el número ya se mostró. 
 
+![](IMG_20191029_224508.jpg)
+
 Por otro lado, si el dado no se ha lanzado y se pulsa sólo uno de los botones, se representa el número 0 para indicar que no se ha tirado el dado en esta ronda.
 
 Además, este dado tiene un segundo modo de funcionamiento en el que se puede variar la luminosidad o brillo de los leds mientras los números se sudecen pero en este modo no es posible parar el dado. 
 
-Cada vez que se cambia del modo cambiar brillo al modo normal, se entiende que se ha comenzado una nueva ronda y por tanto el dado no recuerda el último valor representado y si se pulsa alguno de los botones, mostrará el número 0 como si se hubiese reiniciado.
-
+Cada vez que se cambia del modo cambiar brillo al modo normal, se entiende que se ha comenzado una nueva ronda y por tanto el dado no recuerda el último valor representado y si se pulsa alguno de los botones, mostrará el número 0 como si se hubiese reiniciado. Se muestra este comportamiento en el siguiente GIF:
 
 ![](demo_cero.gif)  
   
 
 
-![Ensamblaje del circuito](circuito_dado.png)
-
-Este dado programado consta de los siguientes componentes: 
+Consta de los siguientes componentes: 
 * Display de 7 segmentos donde se mostrarán los dígitos
 * 3 Pulsadores: cambiar modo, pulsación simultánea y control del brillo
 * Transistor S8050: ayuda a regular la diferencia de potencial del display para así poder modificar su brillo
 * Potenciómetro: señal de entrada analógica para regular la velocidad de funcionamiento
+
+
+![Ensamblaje del circuito](circuito_dado.png)
 
 
 ## Especificaciones del funcionamiento
