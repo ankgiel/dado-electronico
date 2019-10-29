@@ -63,7 +63,7 @@ Pin E del display conectado al pin digital 0
 ...
 Pin G del display conectado al pin digital 7
     
-         PIN: 7 6 5 4 - 2 1 0 
+         PIN: 7 6 5 4 3 2 1 0 
     SEGMENTO: G F A B P D C E 
 
 Ejemplo para representar el número 3:
