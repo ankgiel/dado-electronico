@@ -1,10 +1,10 @@
 # Dado Electrónico
 
-![](demo_dado.gif)
+![](doc_images/demo_dado.gif)
 
 Este pequeño proyecto consiste en un dado electrónico en el que los números aparecen en el display de forma sucesiva mientras el jugador mantiene dos botones pulsados. Al soltar estos botones el último número que se mostró en el dado es el seleccionado y se muestra de forma parpadeante. La velocidad de aparición de los números es variable y por tanto es posible dificultar hacer trampas para soltar los botones en el número que se desee. Además, por si el usuario no recuerda el número que le salió en el dado, pulsando únicamente uno de los dos botones es posible mostrar el dígito las veces necesarias pero sin parpadear para indicar que el número ya se mostró. 
 
-![](IMG_20191029_224508.jpg)
+![](doc_images/IMG_20191029_224508.jpg)
 
 Por otro lado, si el dado no se ha lanzado y se pulsa sólo uno de los botones, se representa el número 0 para indicar que no se ha tirado el dado en esta ronda.
 
@@ -12,7 +12,7 @@ Además, este dado tiene un segundo modo de funcionamiento en el que se puede va
 
 Cada vez que se cambia del modo cambiar brillo al modo normal, se entiende que se ha comenzado una nueva ronda y por tanto el dado no recuerda el último valor representado y si se pulsa alguno de los botones, mostrará el número 0 como si se hubiese reiniciado. Se muestra este comportamiento en el siguiente GIF:
 
-![](demo_cero.gif)  
+![](doc_images/demo_cero.gif)  
   
 
 
@@ -23,8 +23,8 @@ Consta de los siguientes componentes:
 * Potenciómetro: señal de entrada analógica para regular la velocidad de funcionamiento
 
 
-![Ensamblaje del circuito](circuito_dado.png)
-![Esquemático del circuito](dado_schematic.png)
+![Ensamblaje del circuito](doc_images/circuito_dado.png)
+![Esquemático del circuito](doc_images/dado_schematic.png)
 
 
 ## Especificaciones del funcionamiento
@@ -36,9 +36,9 @@ En este modo, el display se utiliza para representar los dígitos y el led del p
 ### Modo variación del brillo
 Los números se suceden a la velocidad establecida y tanto el led punto del display como el led LED_BUILTIN se encuentran encendidos mientras los números se suceden. El brillo se establece dentro de este modo con ayuda de una variable. Esta variable es la que se utiliza para cambiar la tensión del pin (pin PWM) que se conecta como base del transistor para modificar la luminosidad de los leds del display. Para incrementar o disminuir el valor de esta variable basta con entrar en este modo y pulsar el botón **+** o **-** respectivamente. 
 
-![Esquema transistor](esquema.png)
+![Esquema transistor](doc_images/esquema.png)
 
-![](demo_brillo.gif)
+![](doc_images/demo_brillo.gif)
 
 
 ## Display y mi configuración para utilizarlo
@@ -48,7 +48,7 @@ En este otro proyecto, en el apartado máscaras, explico un poco más detalladam
 [Ankgiel - Proyecto Display con máscaras](https://github.com/ankgiel/Display_mascaras)
 
 
-![Etiquetado display](etiquetado_display_7_segmentos.png)    ![Pines del display](pines_display.PNG)
+![Etiquetado display](doc_images/etiquetado_display_7_segmentos.png)    ![Pines del display](doc_images/pines_display.PNG)
  
 Asignación de cada segmento en mis pines digitales 
 
@@ -102,4 +102,4 @@ La representación de cada número está sujeta al esquema de conexión realizad
 
 
 Y esto es todo, espero que os pueda ser útil. Podéis encontrar todo el código comentado al detalle aquí:
-[Código Arduino (.ino)](dado_electronico_v3.ino)
+[Código Arduino (.ino)](doc_images/dado_electronico_v3.ino)
